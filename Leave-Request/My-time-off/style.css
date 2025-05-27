@@ -1,0 +1,245 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F9F9F9;
+    margin: 0;
+    padding: 0px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-section i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #5E5E5E;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.nav-links a:hover {
+    color: brown;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification {
+    position: relative;
+}
+
+.notification .fa-comments {
+    font-size: 18px;
+    color: #444;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #4A4AFF;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.fa-file {
+    font-size: 18px;
+    color: #444;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #9068A3;
+    border-radius: 50%;
+}
+
+.username {
+    font-weight: 500;
+    color: #333;
+}
+
+.container {
+    background: white;
+    max-width: 95%;
+    height: 120px;
+    padding: 0px 10px 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    margin-bottom: 20px;
+}
+
+.left-sec {
+    width: 50%;
+    margin-left: 50px;
+    padding-top: 2px;
+}
+
+.left-sec h1 {
+    color: purple;
+    font-size: 1.6em;
+}
+
+.right-sec {
+    width: 50%;
+    float: right;
+    align-items: center;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+.textInput {
+    position: relative;
+    display: inline-block;
+    font-size: 1.2em;
+    width: 123%;
+    box-sizing: border-box;
+    padding-left: 170px;
+}
+
+.textInput input[type="text"] {
+    width: 90%;
+    font-size: 1em;
+}
+
+.textInput i.fa-magnifying-glass {
+    position: absolute;
+    right: 80px;
+    transform: translateY(20%);
+}
+
+.actions {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.pagination {
+    float: right;
+    align-items: center;
+    margin-right: -68px;
+    padding-top: 10px;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #989694;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.attendance-table {
+    width: 96%;
+    border-collapse: collapse;
+    margin-left: 2%;
+}
+
+.attendance-table th,
+.attendance-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.attendance-table tbody :hover {
+    background-color: #9fa3b3;
+}
+
+.attendance-table td {
+    color: black;
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.attendance-table th {
+    background-color: #8d93a9;
+    color: black;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.sem;
+}
+
+.create-button {
+    background-color: blue;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+
+.attendance-table input[type="checkbox"] {
+    transform: scale(1.7);
+    margin-right: 25px;
+}
+
+.Request-Start-Date {
+    display: inline-block;
+    background-color: #F3E5F5;
+    color: #155724;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.Request-End-Date {
+    background-color: #F3E5F5;
+    color: #155724;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}

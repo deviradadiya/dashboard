@@ -1,19 +1,44 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
-    margin: 20px;
 }
 
-.dashboard-header {
-    display: block;
+.nav {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 6px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.bar-icon {
+    padding-right: 15px;
+}
+
+.left-nav {
+    display: flex;
     align-items: center;
-    margin-bottom: 10px;
+
 }
 
-.dashboard-header h1 {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 1.7em;
-    color: #42403E;
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-icon img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+
+.user-text h4 {
+    color: gray;
+    font-size: 14px;
 }
 
 .dashboard-header h2 {
@@ -23,7 +48,31 @@ body {
 }
 
 .divider {
-    font-size: 1.5em;
+    font-size: 1.6em;
+}
+
+.side-bar {
+    display: flex;
+    width: 100%;
+}
+
+.dashboard-header {
+    padding-top: 50px;
+    display: block;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dashboard-header h1 {
+    padding-left: 7px;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: #42403E;
+}
+
+.dashboard-header h2 {
+    color: #64A4D8;
 }
 
 .controls {
@@ -57,14 +106,14 @@ body {
 
 .actions {
     display: flex;
-    padding-left: 52%;
+    padding-left: 55%;
 }
 
 .actions a {
     font-size: 1.2em;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #FF8C00;
+    background-color: #989694;
     color: white;
     cursor: pointer;
     text-decoration: none;
@@ -98,7 +147,7 @@ body {
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #FF8C00;
+    background-color: #989694;
     color: white;
     font-size: 1.1em;
     cursor: pointer;
@@ -111,8 +160,9 @@ body {
 
 .attendance-table th,
 .attendance-table td {
+
     border: 1px solid #ddd;
-    padding: 15px;
+    padding: 15px 20px;
     text-align: left;
 }
 

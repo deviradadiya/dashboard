@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F9F9F9;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-section i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #5E5E5E;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.nav-links a:hover {
+    color: brown;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-icon img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+
+.user-text h4 {
+    color: gray;
+    font-size: 14px;
+}
+
+
+.side-bar {
+    display: flex;
+    width: 100%;
+}
+
+.timeoff-container {
+    background: white;
+    width: 99%;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px lightgrey;
+    margin: 15px auto;
+}
+
+.header h2 {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.header p {
+    padding-bottom: 10px;
+    color: #666;
+    font-size: 17px;
+}
+
+.action-buttons {
+    margin-top: 10px;
+}
+
+.action-buttons a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.save {
+    background-color: #228B22;
+    color: white;
+}
+
+.discard {
+    background-color: #DC3545;
+    color: white;
+}
+
+.box {
+    width: 99%;
+    margin: 0 auto 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px lightgrey;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.draft-status-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.draft-btn {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.status-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.status-buttons a {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.to-approve {
+    background-color: #28A745;
+    color: white;
+    border: none;
+}
+
+.approved {
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-box select,
+.form-box input[type="date"],
+.form-box input[type="text"],
+.form-box textarea {
+    width: 60%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.date-row {
+    margin-top: 20px;
+}
+
+.date-fields {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.duration,
+.description,
+.reasons {
+    margin-top: 15px;
+}

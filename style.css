@@ -29,13 +29,11 @@
     gap: 15px;
 }
 
-.user-icon {
-    background-color: #bdc3c7;
-    border-radius: 50%;
+.user-icon img {
     height: 30px;
     width: 30px;
-    text-align: center;
-    padding-top: 5px;
+    border-radius: 50%;
+
 }
 
 .user-text h4 {
@@ -92,7 +90,7 @@
 .usr-address {
 
     background-color: #3a5a74;
-    line-height: 30px;
+    line-height: 31.5px;
     padding: 20px;
     text-align: center;
 }
@@ -128,7 +126,7 @@
 
 .card {
     background-color: white;
-    height: 100px;
+    height: 100%;
     flex: 1 1 150px;
     display: flex;
     border-radius: 10px 10px;
@@ -140,22 +138,28 @@
     box-shadow: 10px 10px 12px gray;
 }
 
-.user-card {
+.user-card,
+.line-card,
+.pay-card,
+.leave-card     {
     background-color: #64a4d8;
-    height: 100px;
     width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-
-.user-para {
-    padding-left: 24px;
-    line-height: 10px;
+.user-para,
+.line-para,
+.pay-para,
+.leave-para {
+    width: 100%;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
     color: orange;
-    padding-top: 33px;
+    align-items: center;
 }
 
 .count {
@@ -166,53 +170,43 @@
 
 .line-card {
     background-color: rgb(140, 117, 117);
-    height: 100px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
-.line-para {
-    padding-left: 20px;
-    padding-top: 30px;
-    text-align: center;
+.line-para a {
+    text-decoration: none;
     color: orange;
 }
 
 .pay-card {
     background-color: #E0B0FF;
-    height: 100px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .pay-para {
-    padding-left: 30px;
-    font-size: 16px;
-    text-align: center;
     color: #E0B0FF;
-    padding-top: 36px;
+}
+
+.pay-para a {
+    text-decoration: none;
+    color: #E0B0FF;
 }
 
 .leave-card {
+
     background-color: #97cf8a;
-    height: 100px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
+
 
 .leave-para {
 
-    padding-left: 10px;
-    font-size: 16px;
-    text-align: center;
     color: #97cf8a;
-    padding-top: 35px;
+
+}
+
+.leave-para a {
+    text-decoration: none;
+    color: #97cf8a;
 }
 
 .card p h3 {
@@ -232,7 +226,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #476986;
+    background-color: #7ba6cd;
+}
+
+.check-card a {
+    text-decoration: none;
+    color: white;
 }
 
 .check-card p {
@@ -252,8 +251,6 @@
     flex-wrap: wrap;
     gap: 20px;
 }
-
-
 
 .panel {
 
@@ -334,4 +331,55 @@
     height: 1px;
     background-color: #ddd;
     margin: 10px 0;
+}
+
+/* Profile */
+
+.user-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    outline: none;
+    /* remove blue border when focused */
+}
+
+/* Show dropdown on hover or focus  */
+.user-dropdown:hover .dropdown-content,
+.user-dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #608eb4;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: #0f0f0f;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #afc8dd;
+}
+
+
+.fa-circle-user,
+.fa-gear,
+.fa-right-from-bracket {
+    color: black;
+    padding-right: 12px;
+
 }

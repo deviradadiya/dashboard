@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Leave Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="left-section">
+            <i class="fas fa-bars"></i>
+            <span class="logo">Time Off</span>
+            <nav class="nav-links">
+                <a href="My-time-off/index.html">My Time Off</a>
+                <a href="#">Managers</a>
+                <a href="#">Mandatory Holidays</a>
+                <a href="Optional-holidays/index.html   ">Optional Holidays</a>
+            </nav>
+        </div>
+        <div class="right-nav">
+            <div class="mess-icon">
+                <i class="fa-solid fa-message"></i>
+            </div>
+            <div class="file-icon">
+                <i class="fa-solid fa-file"></i>
+            </div>
+
+            <div class="user-icon">
+                <img src="user.jpg" alt="">
+            </div>
+            <div class="user-text">
+                <h4>Rohit Rajak</h4>
+            </div>
+        </div>
+    </header>
+
+    <div class="timeoff-container">
+        <div class="header">
+            <h2>My Time Off Requests</h2>
+            <p>/ Rohit Rajak on Optional Leave 2025: 0.00 days (False)</p>
+            <div class="action-buttons">
+                <a href="#" class="save">Save</a>
+                <a href="#" class="discard">Discard</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="form-section">
+            <div class="draft-status-container">
+                <a href="#" class="draft-btn">Mark as Draft</a>
+                <div class="status-buttons">
+                    <a href="#" class="to-approve active">To Approve</a>
+                    <a href="#" class="approved">Approved</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-box">
+            <div class="leave">
+                <label for="leave-type">Leave Type</label>
+                <select id="leave-type">
+                    <option>Optional Leave 2025</option>
+                    <option>Half Day</option>
+                    <option>Full Day</option>
+                </select>
+            </div>
+
+            <div class="sub-leave">
+                <label for="employee-name">Employee</label>
+                <select id="employee-name">
+                    <option>Rohit Rajak</option>
+                </select>
+            </div>
+
+            <div class="date-row">
+                <div class="date-fields">
+                    <label for="from-date">From</label>
+                    <input type="date" id="from-date">
+                    <label for="to-date">To</label>
+                    <input type="date" id="to-date">
+                </div>
+            </div>
+
+            <div class="duration">
+                <label for="duration">Duration</label>
+                <input type="text" id="duration"> Days
+            </div>
+
+            <div class="description">
+                <label for="description-text">Description</label>
+                <textarea id="description-text"></textarea>
+            </div>
+
+            <div class="reasons">
+                <label for="reason">Reasons</label>
+                <select id="reason">
+                    <option>Sick Leave</option>
+                    <option>Vacation</option>
+                    <option>Others</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

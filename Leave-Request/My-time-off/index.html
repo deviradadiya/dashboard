@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>my time off</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="left-section">
+            <a href="#"> <i class="fas fa-bars"></i></a>
+            <h2 class="logo">Time Off</h2>
+            <nav class="nav-links">
+                <a href="#">My Time Off</a>
+                <a href="#">Managers</a>
+                <a href="#">Mandatory Holidays</a>
+                <a href="#">Optional Holidays</a>
+            </nav>
+        </div>
+        <div class="right-section">
+            <div class="notification">
+                <i class="fas fa-comments"></i>
+                <span class="badge">8</span>
+            </div>
+            <i class="fas fa-file"></i>
+            <div class="profile">
+                <div class="avatar"></div>
+                <span class="username">Rohit Rajak</span>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left-sec">
+            <h1>My Time Off Requests</h1>
+            <a href="#" class="create-button">create</a>
+        </div>
+        <div class="right-sec">
+            <div class="textInput">
+                <input type="text" id="textInput" placeholder="techkel pvt.ltd...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="pagination">
+                <a href="#"><i class="fa-solid fa-filter"></i>Filters</a>
+                <a href="#"><i class="fa-solid fa-bars"></i>Groups by</a>
+                <a href="#"><i class="fa-solid fa-star"></i>Favourites</a>
+                <span>1-54/54</span>
+                <a href="#">&lt;</a>
+                <a href="#">&gt;</a>
+                <a href="#"><i class="fa-solid fa-list"></i></a>
+                <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+                <a href="#"><i class="fa-brands fa-windows"></i></a>
+            </div>
+        </div>
+    </div>
+    <table class="attendance-table">
+        <thead>
+            <tr>
+                <th>Time Off Type</th>
+                <th> Request Start Date</th>
+                <th>Request End Date</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox">Earned Leave</td>
+                <td><span class="Request-Start-Date">10/04/2024</span></td>
+                <td><span class="Request-End-Date">10/04/2024</span></td>
+                <td>Going out for personal reasons.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Earned Leave</td>
+                <td><span class="Request-Start-Date">31/07/2024</span></td>
+                <td><span class="Request-End-Date">31/07/2024</span></td>
+                <td>Due to my sudden illness. i am taking a half-time leave. i have a headache.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Earned Leave</td>
+                <td><span class="Request-Start-Date">14/07/2023</span></td>
+                <td><span class="Request-End-Date">14/07/2023</span></td>
+                <td> Personal Reasons</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Leave Without Pay</td>
+                <td><span class="Request-Start-Date">27/07/2023</span></td>
+                <td><span class="Request-End-Date">27/07/2023</span></td>
+                <td>Some medical issues.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Leave Without Pay</td>
+                <td><span class="Request-Start-Date">28/07/2023</span></td>
+                <td><span class="Request-End-Date">28/07/2023</span></td>
+                <td>Some medical issues.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Casual Leave 2025 </td>
+                <td><span class="Request-Start-Date">08/01/2025</span></td>
+                <td><span class="Request-End-Date">08/01/2025</span></td>
+                <td>Personal Reasons.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Optional Leave 2025</td>
+                <td><span class="Request-Start-Date">26/02/2025</span></td>
+                <td><span class="Request-End-Date">26/02/2025</span></td>
+                <td>Going out for personal reasons
+            </tr>
+        </tbody>
+    </table>
+
+</html>
